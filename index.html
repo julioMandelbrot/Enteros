@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Operaciones con Enteros</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1976d2" />
+  
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1976d2">
+  <meta name="msapplication-TileColor" content="#1976d2">
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Operaciones con Números Enteros</h1>
+
+    <div id="game-container">
+      <div id="setup-container">
+        <label for="num-problems">Número de operaciones:</label>
+        <input type="number" id="num-problems" value="5" min="1" />
+        <p>Selecciona el tipo de operación:</p>
+        <div id="operation-selection">
+          <button id="add-sub-btn" class="operation-btn">Sumas/Restas</button>
+          <button id="mult-div-btn" class="operation-btn">Multiplicaciones/Divisiones</button>
+          <button id="all-btn" class="operation-btn">Popurrí</button>
+        </div>
+      </div>
+      
+      <div id="problem-container" class="hidden">
+        <p id="problem"></p>
+        <p id="timer">Tiempo: 0s</p>
+        <input type="number" id="answer" placeholder="Tu respuesta" />
+        <button id="submit-btn">Comprobar</button>
+        <p id="feedback"></p>
+        <p id="counter">1/5</p>
+      </div>
+
+      <div id="summary-container" class="hidden">
+        <h2>Resumen de la Partida</h2>
+        <p id="summary-text"></p>
+        <button id="restart-btn">Jugar de Nuevo</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p class="footer-text">@julioeldematematicas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
